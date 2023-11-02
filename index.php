@@ -18,7 +18,10 @@
 </head>
 <body>
 
-	<?php
+<?php
+require_once 'controller/homeController.php';
+$obj = new homeController();
+$obj->doGet();
 include 'header.php';
 include 'body.php';
 include 'footer.php';
