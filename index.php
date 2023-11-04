@@ -19,10 +19,8 @@
 <body>
 
 <?php
-require_once 'controller/homeController.php';
-$obj = new homeController();
-$obj->doGet();
-include 'header.php';
+require_once 'config.php';
+include'header.php';
 include 'body.php';
 include 'footer.php';
 ?>

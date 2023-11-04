@@ -14,16 +14,16 @@
 					<li class="nav-item"><a class="nav-link" href="#">Tủ sách</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
 				</ul>
-				<form class="d-flex me-2" role="search">
+				<form class="d-flex me-2"  action='<?php echo BASE_URL ?>controller/searchController.php' method='post'>
 					<input class="form-control me-2" type="search" placeholder="Search"
-						aria-label="Search">
-					<button class="btn btn-light btn-outline-danger" stype="submit">
+						aria-label="Search" name="search">
+					<button class="btn btn-light btn-outline-danger" type="submit">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 				</form>
 
 				<div class="d-flex  text-end">
-					<a href="loginForm.php"><button type="button" class="btn btn-primary px-3 me-2">Login</button></a>
+					<a href="<?php BASE_URL?>loginForm.php"><button type="button" class="btn btn-primary px-3 me-2">Login</button></a>
 					<a href="regist.php"><button type="button" class="btn btn-danger me-2">Sign up</button></a>
 				</div>
 			</div>
